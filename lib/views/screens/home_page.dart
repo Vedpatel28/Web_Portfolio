@@ -11,7 +11,10 @@ class HomePage extends StatelessWidget {
     Size s = MediaQuery.of(context).size;
 
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        surfaceTintColor: Colors.transparent,
         title: Text(
           "PV.",
           style: GoogleFonts.lora(
@@ -35,7 +38,7 @@ class HomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(width: s.width * 0.02),
+                SizedBox(width: s.width * 0.1),
                 Stack(
                   children: [
                     Container(
@@ -86,6 +89,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(width: s.width * 0.1),
                 Stack(
                   children: [
                     SizedBox(
@@ -115,7 +119,7 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(height: s.height*0.01),
+                        SizedBox(height: s.height * 0.01),
                         SizedBox(
                           width: s.width * 0.6,
                           child: Text(
@@ -125,7 +129,7 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(height: s.height*0.02),
+                        SizedBox(height: s.height * 0.02),
                         SizedBox(
                           width: s.width * 0.6,
                           child: Text(
@@ -141,7 +145,28 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: s.width * 0.02),
+            SizedBox(height: s.height * 0.02),
+            Container(
+              height: s.height * 1,
+              width: s.width,
+              decoration: BoxDecoration(
+                color: Colors.blue.shade300,
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    "About",
+                    style: GoogleFonts.underdog(
+                      textStyle: MyTextStyle.titleBold,
+                    ),
+                  ),
+                  Container(
+                    width: s.width*0.1,
+                    child: Image.asset("assets/images/decorative line.png"),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

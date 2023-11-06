@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyTextStyle {
-  
+
   static TextStyle extraBold = TextStyle(
     fontWeight: FontWeight.w900,
     fontSize: 22,
@@ -30,6 +30,8 @@ class MyTextStyle {
 
   static TextStyle titleBold = TextStyle(
     fontWeight: FontWeight.w900,
+    letterSpacing: 6,
+    decorationColor: Colors.black,
     fontSize: 38,
     color: MyColor.darkBackGround,
   );
