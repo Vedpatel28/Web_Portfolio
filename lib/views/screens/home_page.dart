@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         surfaceTintColor: Colors.transparent,
         title: Text(
-          "PV.",
+          "Portfolio",
           style: GoogleFonts.lora(
             textStyle: MyTextStyle.logoText,
           ),
@@ -133,7 +133,7 @@ class HomePage extends StatelessWidget {
                         SizedBox(
                           width: s.width * 0.6,
                           child: Text(
-                            "I'm Flutter Developer with some skill's,Like figma , firebase , DataBase & \nmany more...",
+                            "I'm Flutter Developer with some skill's Like figma , firebase , DataBase & \nmany more...",
                             style: GoogleFonts.keaniaOne(
                               textStyle: MyTextStyle.smallBold,
                             ),
@@ -146,11 +146,12 @@ class HomePage extends StatelessWidget {
               ],
             ),
             SizedBox(height: s.height * 0.02),
+            // About
             Container(
-              height: s.height * 1,
               width: s.width,
+              padding: EdgeInsets.all(s.height*0.02),
               decoration: BoxDecoration(
-                color: Colors.blue.shade300,
+                color: MyColor.grayBackGroundText,
               ),
               child: Column(
                 children: [
@@ -160,13 +161,24 @@ class HomePage extends StatelessWidget {
                       textStyle: MyTextStyle.titleBold,
                     ),
                   ),
+                  SizedBox(height: s.height*0.03),
                   Container(
-                    width: s.width*0.1,
-                    child: Image.asset("assets/images/decorative line.png"),
+                    padding: EdgeInsets.only(
+                      left: s.height * 0.5,
+                      right: s.height * 0.5,
+                    ),
+                    child: Text(
+                      textAlign: TextAlign.center,
+                      "Hi I’am ved Patel, 18 years old Person and This person has a lot of knowledge of Flutter.I'm not afraid to take on new challenges and embrace failures as opportunities to learn and improve. I am committed to delivering high-quality, efficient, and user-friendly applications that provide real value to end-users.",
+                      style: GoogleFonts.keaniaOne(
+                        textStyle: MyTextStyle.smallBold,
+                      ),
+                    ),
                   ),
                 ],
               ),
             ),
+
           ],
         ),
       ),

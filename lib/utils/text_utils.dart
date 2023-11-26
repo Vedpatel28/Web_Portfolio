@@ -1,6 +1,5 @@
 import 'package:adept_lodge_401904/utils/color_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class MyTextStyle {
 
@@ -40,7 +39,7 @@ class MyTextStyle {
   static TextStyle smallBold = TextStyle(
     fontWeight: FontWeight.w700,
     fontSize: 16,
-    color: MyColor.darkBackGround,
+    color: MyColor.bodyTextColor,
   );
 
   static TextStyle titleItalic = TextStyle(
