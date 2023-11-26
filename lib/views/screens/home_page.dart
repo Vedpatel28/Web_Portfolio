@@ -137,10 +137,7 @@ class HomePage extends StatelessWidget {
                   ),
                   SizedBox(height: s.height * 0.03),
                   Container(
-                    padding: EdgeInsets.only(
-                      left: s.height * 0.5,
-                      right: s.height * 0.5,
-                    ),
+                    width: s.width * 0.6,
                     child: Text(
                       textAlign: TextAlign.center,
                       "Hi I’am ved Patel, 18 years old Person and This person has a lot of knowledge of Flutter.I'm not afraid to take on new challenges and embrace failures as opportunities to learn and improve. I am committed to delivering high-quality, efficient, and user-friendly applications that provide real value to end-users.",
@@ -526,6 +523,8 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: s.height * 0.02),
+
           ],
         ),
       ),
