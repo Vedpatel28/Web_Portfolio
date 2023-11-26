@@ -31,20 +31,17 @@ class MyTextStyle {
     fontWeight: FontWeight.w900,
     letterSpacing: 6,
     decorationColor: Colors.black,
-    fontSize: 38,
     color: MyColor.darkBackGround,
   );
 
 
   static TextStyle smallBold = TextStyle(
     fontWeight: FontWeight.w700,
-    fontSize: 16,
     color: MyColor.bodyTextColor,
   );
 
   static TextStyle titleItalic = TextStyle(
     fontWeight: FontWeight.w400,
-    fontSize: 20,
     color: MyColor.darkBackGround,
   );
 
