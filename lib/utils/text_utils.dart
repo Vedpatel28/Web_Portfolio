@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_website_2e055/utils/color_utils.dart';
 
 class MyTextStyle {
-
   static TextStyle extraBold = TextStyle(
     fontWeight: FontWeight.w900,
     fontSize: 22,
@@ -29,11 +28,9 @@ class MyTextStyle {
 
   static TextStyle titleBold = TextStyle(
     fontWeight: FontWeight.w700,
-    letterSpacing: 6,
     decorationColor: Colors.black,
-    color: MyColor.mainText,
+    color: MyColor.titleText,
   );
-
 
   static TextStyle smallBold = TextStyle(
     fontWeight: FontWeight.w600,
@@ -42,7 +39,7 @@ class MyTextStyle {
 
   static TextStyle titleItalic = TextStyle(
     fontWeight: FontWeight.w400,
-    color: MyColor.mainText,
+    color: MyColor.titleText,
   );
 
   static TextStyle bgText = TextStyle(

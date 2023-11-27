@@ -13,7 +13,8 @@ class MyColor {
   static Color lightBackGround = const Color(0xff2C2B30);
   static Color midBackGrounds = const Color(0xff29282D);
   static Color darkBackGrounds = const Color(0xff252428);
-  static Color mainText = const Color(0xffF37910);
+  static Color titleText = const Color(0xffF37910);
+  static Color subTitleText = const Color(0xffffffff);
   static Color subText = const Color(0xffF5F3ED);
 
 }
