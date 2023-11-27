@@ -4,17 +4,12 @@ class MyColor {
 
   static Color white = const Color(0xffffffff);
   static Color black = const Color(0xff000000);
-  static Color headerBGColor = const Color(0xff93B1A6);
-  static Color bodyTextColor = const Color(0xff5C8374);
-  static Color darkBackGround = const Color(0xff183D3D);
-  static Color grayBackGroundText = const Color(0xffF5F7F8);
-
-
-  static Color lightBackGround = const Color(0xff2C2B30);
-  static Color midBackGrounds = const Color(0xff29282D);
-  static Color darkBackGrounds = const Color(0xff252428);
-  static Color titleText = const Color(0xffF37910);
-  static Color subTitleText = const Color(0xffffffff);
-  static Color subText = const Color(0xffF5F3ED);
+  static Color digDeveloperColor = const Color(0xffCACEDD);
+  static Color backGround = const Color(0xff101630);
+  static Color titleTextColor = const Color(0xff53C6F2);
+  static Color subTitleTextColor = const Color(0xffFAF9FA);
+  static Color textColor = const Color(0xff8D909F);
+  static Color gradientStart = const Color(0xff4EAED8);
+  static Color gradientEnd = const Color(0xff4924C0);
 
 }
