@@ -1,17 +1,14 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import 'views/screens/home_page.dart';
+import 'package:portfolio_website_2e055/views/screens/home_page.dart';
 
 void main() {
-  runApp(
-    const MyApp(),
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }

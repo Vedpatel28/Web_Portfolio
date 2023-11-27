@@ -1,5 +1,5 @@
-import 'package:adept_lodge_401904/utils/color_utils.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio_website_2e055/utils/color_utils.dart';
 
 class MyTextStyle {
 
@@ -28,21 +28,21 @@ class MyTextStyle {
   );
 
   static TextStyle titleBold = TextStyle(
-    fontWeight: FontWeight.w900,
+    fontWeight: FontWeight.w700,
     letterSpacing: 6,
     decorationColor: Colors.black,
-    color: MyColor.darkBackGround,
+    color: MyColor.mainText,
   );
 
 
   static TextStyle smallBold = TextStyle(
-    fontWeight: FontWeight.w700,
-    color: MyColor.bodyTextColor,
+    fontWeight: FontWeight.w600,
+    color: MyColor.subText,
   );
 
   static TextStyle titleItalic = TextStyle(
     fontWeight: FontWeight.w400,
-    color: MyColor.darkBackGround,
+    color: MyColor.mainText,
   );
 
   static TextStyle bgText = TextStyle(
