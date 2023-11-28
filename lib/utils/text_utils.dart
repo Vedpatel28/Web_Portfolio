@@ -31,4 +31,19 @@ class MyTextStyle {
     letterSpacing: 3,
     color: MyColor.white,
   );
+
+  static TextStyle aboutMe = TextStyle(
+    fontWeight: FontWeight.w700,
+    color: MyColor.white,
+  );
+  
+  static TextStyle aboutDetail = TextStyle(
+    fontWeight: FontWeight.w500,
+    color: MyColor.subTitleTextColor.withOpacity(0.6),
+  );
+
+  static TextStyle project1 = TextStyle(
+    fontWeight: FontWeight.w400,
+    color: MyColor.gradientStart,
+  );
 }
