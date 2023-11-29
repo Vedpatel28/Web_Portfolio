@@ -38,6 +38,7 @@ dependencies:
   google_fonts: any
   url_launcher: any
   firebase_core: any
+  gradient_borders: ^1.0.0
 
 dev_dependencies:
   flutter_test:
