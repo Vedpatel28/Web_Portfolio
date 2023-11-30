@@ -30,9 +30,6 @@ class _HomePageState extends State<HomePage> {
         surfaceTintColor: Colors.transparent,
       ),
       body: SingleChildScrollView(
-        controller: ScrollController(
-          initialScrollOffset: 3800,
-        ),
         child: Column(
           children: [
             // Big Developer   I'ma    Full Stack Software Developer
@@ -737,7 +734,7 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   // Contacts
                   Text(
-                    "_o_ Contacts _o_",
+                    "Contacts",
                     style: GoogleFonts.roboto(
                       textStyle: MyTextStyle.aboutMe,
                       fontSize: s.width * 0.014,
