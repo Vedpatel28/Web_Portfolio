@@ -5,6 +5,7 @@ import 'package:glassmorphism/glassmorphism.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website_2e055/utils/color_utils.dart';
 import 'package:portfolio_website_2e055/utils/text_utils.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -64,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                 Transform.translate(
                   offset: const Offset(60, 200),
                   child: Text(
-                    "Full Stack \nSoftware \nDeveloper.",
+                    "Full Stack \nFlutter \nDeveloper.",
                     style: GoogleFonts.bigshotOne(
                       textStyle: MyTextStyle.jobTitle,
                       fontSize: s.shortestSide * 0.14,
@@ -180,7 +181,7 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(
                       width: s.width * 0.4,
                       child: Text(
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                        "I'm Ved Patel, a passionate and driven 19-year-old Flutter Developer currently pursuing my studies at Red & White. I'm excited to share a bit about myself and my journey as a beginner Flutter Developer. In addition to my technical skills, I bring a strong work ethic and a growth mindset to any project I undertake. I'm not afraid to take on new challenges and embrace failures as opportunities to learn and improve. I am committed to delivering high-quality, efficient, and user-friendly applications that provide real value to end-users.",
                         style: GoogleFonts.roboto(
                           textStyle: MyTextStyle.aboutDetail,
                           fontSize: s.width * 0.014,
@@ -740,88 +741,170 @@ class _HomePageState extends State<HomePage> {
                       fontSize: s.width * 0.014,
                     ),
                   ),
-                  SizedBox(height: s.height*0.02),
+                  SizedBox(height: s.height * 0.02),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // SizedBox(width: s.width*0.03,),
                       // linkedin
-                      Container(
-                        width: s.width * 0.05,
-                        height: s.height * 0.04,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage(
-                              "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png",
+                      InkWell(
+                        onTap: () {
+                          launchUrl(
+                            Uri.parse(
+                                "https://www.linkedin.com/in/ved-patel-466386273/"),
+                          );
+                        },
+                        child: Ink(
+                          child: Container(
+                            width: s.width * 0.05,
+                            height: s.height * 0.04,
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png",
+                                ),
+                                fit: BoxFit.contain,
+                              ),
                             ),
-                            fit: BoxFit.contain,
                           ),
                         ),
                       ),
                       // Name
-                      Text(
-                        "Ved Patel",
-                        style: GoogleFonts.roboto(
-                          textStyle: MyTextStyle.aboutDetail,
+                      InkWell(
+                        onTap: () {
+                          launchUrl(
+                            Uri.parse(
+                                "https://www.linkedin.com/in/ved-patel-466386273/"),
+                          );
+                        },
+                        child: Ink(
+                          child: Text(
+                            "Ved Patel",
+                            style: GoogleFonts.roboto(
+                              textStyle: MyTextStyle.aboutDetail,
+                            ),
+                          ),
                         ),
                       ),
                       // Git Hub
-                      Container(
-                        width: s.width * 0.05,
-                        height: s.height * 0.04,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage(
-                              "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+                      InkWell(
+                        onTap: () {
+                          launchUrl(
+                            Uri.parse("https://github.com/Vedpatel28"),
+                          );
+                        },
+                        child: Ink(
+                          child: Container(
+                            width: s.width * 0.05,
+                            height: s.height * 0.04,
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+                                ),
+                                fit: BoxFit.contain,
+                              ),
                             ),
-                            fit: BoxFit.contain,
                           ),
                         ),
-                      ),// Name
-                      Text(
-                        "ved_patel_28",
-                        style: GoogleFonts.roboto(
-                          textStyle: MyTextStyle.aboutDetail,
+                      ),
+                      // Name
+                      InkWell(
+                        onTap: () {
+                          launchUrl(
+                            Uri.parse("https://github.com/Vedpatel28"),
+                          );
+                        },
+                        child: Ink(
+                          child: Text(
+                            "ved_patel_28",
+                            style: GoogleFonts.roboto(
+                              textStyle: MyTextStyle.aboutDetail,
+                            ),
+                          ),
                         ),
                       ),
                       // Contacts
-                      Container(
-                        width: s.width * 0.05,
-                        height: s.height * 0.04,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage(
-                              "https://upload.wikimedia.org/wikipedia/commons/b/b7/Google_Contacts_logo.png",
+                      InkWell(
+                        onTap: () {
+                          Uri call = Uri(
+                            scheme: 'tel',
+                            path: "9909200558",
+                          );
+                          launchUrl(call);
+                        },
+                        child: Ink(
+                          child: Container(
+                            width: s.width * 0.05,
+                            height: s.height * 0.04,
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://upload.wikimedia.org/wikipedia/commons/b/b7/Google_Contacts_logo.png",
+                                ),
+                                fit: BoxFit.contain,
+                              ),
                             ),
-                            fit: BoxFit.contain,
                           ),
                         ),
                       ),
                       // Number
-                      Text(
-                        "+91 9909200558",
-                        style: GoogleFonts.roboto(
-                          textStyle: MyTextStyle.aboutDetail,
+                      InkWell(
+                        onTap: () {
+                          Uri call = Uri(
+                            scheme: 'tel',
+                            path: "9909200558",
+                          );
+                          launchUrl(call);
+                        },
+                        child: Ink(
+                          child: Text(
+                            "+91 9909200558",
+                            style: GoogleFonts.roboto(
+                              textStyle: MyTextStyle.aboutDetail,
+                            ),
+                          ),
                         ),
                       ),
                       // E-mail
-                      Container(
-                        width: s.width * 0.05,
-                        height: s.height * 0.04,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage(
-                              "https://static-00.iconduck.com/assets.00/gmail-icon-512x511-fih5xfbp.png",
+                      InkWell(
+                        onTap: () {
+                          Uri mail = Uri(
+                            scheme: 'mailto',
+                            path: "pved82802@gmail.com",
+                          );
+                          launchUrl(mail);
+                        },
+                        child: Ink(
+                          child: Container(
+                            width: s.width * 0.05,
+                            height: s.height * 0.04,
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://static-00.iconduck.com/assets.00/gmail-icon-512x511-fih5xfbp.png",
+                                ),
+                                fit: BoxFit.contain,
+                              ),
                             ),
-                            fit: BoxFit.contain,
                           ),
                         ),
                       ),
                       // Email
-                      Text(
-                        "pved82802@gmail.com",
-                        style: GoogleFonts.roboto(
-                          textStyle: MyTextStyle.aboutDetail,
+                      InkWell(
+                        onTap: () {
+                          Uri mail = Uri(
+                            scheme: 'mailto',
+                            path: "pved82802@gmail.com",
+                          );
+                          launchUrl(mail);
+                        },
+                        child: Ink(
+                          child: Text(
+                            "pved82802@gmail.com",
+                            style: GoogleFonts.roboto(
+                              textStyle: MyTextStyle.aboutDetail,
+                            ),
+                          ),
                         ),
                       ),
                     ],
