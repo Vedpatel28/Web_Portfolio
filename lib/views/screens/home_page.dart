@@ -1,12 +1,12 @@
 // ignore_for_file: must_be_immutable
 
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:glassmorphism/glassmorphism.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website_2e055/utils/color_utils.dart';
 import 'package:portfolio_website_2e055/utils/text_utils.dart';
+import 'package:typewritertext/typewritertext.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
@@ -34,16 +34,16 @@ class _HomePageState extends State<HomePage> {
       ),
       body: SingleChildScrollView(
         child:
-        // LayoutBuilder(
-        //   builder: (context, constraints) {
-        // log("_____---------________-------________");
-        // log("Con : ${constraints.biggest.width}");
-        // log("Wid : ${constraints.maxWidth}");
-        // log("_____---------________-------________");
+            // LayoutBuilder(
+            //   builder: (context, constraints) {
+            // log("_____---------________-------________");
+            // log("Con : ${constraints.biggest.width}");
+            // log("Wid : ${constraints.maxWidth}");
+            // log("_____---------________-------________");
 
-        // if (constraints.biggest.width > 1000) {
-        //   return
-        Column(
+            // if (constraints.biggest.width > 1000) {
+            //   return
+            Column(
           children: [
             // const Text(
             //   "500 Size LayOutBuilder",
@@ -83,11 +83,21 @@ class _HomePageState extends State<HomePage> {
                 // Full Stack Software Developer
                 Transform.translate(
                   offset: const Offset(60, 200),
-                  child: Text(
-                    "Full Stack \nFlutter \nDeveloper.",
-                    style: GoogleFonts.bigshotOne(
-                      textStyle: MyTextStyle.jobTitle,
-                      fontSize: s.shortestSide * 0.14,
+                  child: TypeWriterText(
+                    // "Full Stack \nFlutter \nDeveloper.",
+                    // style: GoogleFonts.bigshotOne(
+                    //   textStyle: MyTextStyle.jobTitle,
+                    //   fontSize: s.shortestSide * 0.14,
+                    // ),
+                    text: Text(
+                      "Full Stack \nFlutter \nDeveloper.",
+                      style: GoogleFonts.bigshotOne(
+                        textStyle: MyTextStyle.jobTitle,
+                        fontSize: s.shortestSide * 0.14,
+                      ),
+                    ),
+                    duration: const Duration(
+                      milliseconds: 150,
                     ),
                   ),
                 ),
@@ -141,7 +151,7 @@ class _HomePageState extends State<HomePage> {
                       duration: const Duration(
                         milliseconds: 100,
                       ),
-                      height:s.height * 0.1,
+                      height: s.height * 0.1,
                       width: s.width * 0.2,
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
@@ -252,36 +262,36 @@ class _HomePageState extends State<HomePage> {
                           child: Ink(
                             decoration: hireMe
                                 ? BoxDecoration(
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(
-                                width: 3,
-                                style: BorderStyle.solid,
-                                color: MyColor.gradientEnd,
-                              ),
-                            )
+                                    borderRadius: BorderRadius.circular(12),
+                                    border: Border.all(
+                                      width: 3,
+                                      style: BorderStyle.solid,
+                                      color: MyColor.gradientEnd,
+                                    ),
+                                  )
                                 : BoxDecoration(
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(
-                                width: 3,
-                                style: BorderStyle.solid,
-                                color: Colors.transparent,
-                              ),
-                              gradient: LinearGradient(
-                                colors: [
-                                  MyColor.gradientStart,
-                                  MyColor.gradientEnd,
-                                ],
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                              ),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: Colors.black26,
-                                  spreadRadius: 3,
-                                  blurRadius: 7,
-                                ),
-                              ],
-                            ),
+                                    borderRadius: BorderRadius.circular(12),
+                                    border: Border.all(
+                                      width: 3,
+                                      style: BorderStyle.solid,
+                                      color: Colors.transparent,
+                                    ),
+                                    gradient: LinearGradient(
+                                      colors: [
+                                        MyColor.gradientStart,
+                                        MyColor.gradientEnd,
+                                      ],
+                                      begin: Alignment.topLeft,
+                                      end: Alignment.bottomRight,
+                                    ),
+                                    boxShadow: const [
+                                      BoxShadow(
+                                        color: Colors.black26,
+                                        spreadRadius: 3,
+                                        blurRadius: 7,
+                                      ),
+                                    ],
+                                  ),
                             child: AnimatedContainer(
                               curve: Curves.decelerate,
                               duration: const Duration(
@@ -331,36 +341,36 @@ class _HomePageState extends State<HomePage> {
                           child: Ink(
                             decoration: resume
                                 ? BoxDecoration(
-                              borderRadius: BorderRadius.circular(12),
-                              gradient: LinearGradient(
-                                colors: [
-                                  MyColor.gradientStart,
-                                  MyColor.gradientEnd,
-                                ],
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                              ),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: Colors.black26,
-                                  spreadRadius: 3,
-                                  blurRadius: 7,
-                                ),
-                              ],
-                              border: Border.all(
-                                width: 3,
-                                style: BorderStyle.solid,
-                                color: Colors.transparent,
-                              ),
-                            )
+                                    borderRadius: BorderRadius.circular(12),
+                                    gradient: LinearGradient(
+                                      colors: [
+                                        MyColor.gradientStart,
+                                        MyColor.gradientEnd,
+                                      ],
+                                      begin: Alignment.topLeft,
+                                      end: Alignment.bottomRight,
+                                    ),
+                                    boxShadow: const [
+                                      BoxShadow(
+                                        color: Colors.black26,
+                                        spreadRadius: 3,
+                                        blurRadius: 7,
+                                      ),
+                                    ],
+                                    border: Border.all(
+                                      width: 3,
+                                      style: BorderStyle.solid,
+                                      color: Colors.transparent,
+                                    ),
+                                  )
                                 : BoxDecoration(
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(
-                                width: 3,
-                                style: BorderStyle.solid,
-                                color: MyColor.gradientEnd,
-                              ),
-                            ),
+                                    borderRadius: BorderRadius.circular(12),
+                                    border: Border.all(
+                                      width: 3,
+                                      style: BorderStyle.solid,
+                                      color: MyColor.gradientEnd,
+                                    ),
+                                  ),
                             child: AnimatedContainer(
                               duration: const Duration(
                                 milliseconds: 300,
@@ -393,8 +403,8 @@ class _HomePageState extends State<HomePage> {
               ),
               width: s.width * 0.98,
               decoration: const BoxDecoration(
-                // color: MyColor.gradientStart.withOpacity(0.2),
-              ),
+                  // color: MyColor.gradientStart.withOpacity(0.2),
+                  ),
               alignment: Alignment.center,
               child: Column(
                 children: [

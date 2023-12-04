@@ -40,6 +40,7 @@ dependencies:
   firebase_core: any
   gradient_borders: ^1.0.0
   glassmorphism: ^3.0.0
+  typewritertext: ^2.3.0
 
 dev_dependencies:
   flutter_test:
