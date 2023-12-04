@@ -45,13 +45,13 @@ class _HomePageState extends State<HomePage> {
         //   return
         Column(
           children: [
-            const Text(
-              "500 Size LayOutBuilder",
-              style: TextStyle(
-                fontSize: 32,
-                color: Colors.white,
-              ),
-            ),
+            // const Text(
+            //   "500 Size LayOutBuilder",
+            //   style: TextStyle(
+            //     fontSize: 32,
+            //     color: Colors.white,
+            //   ),
+            // ),
             // Big Developer   I'ma    Full Stack Software Developer
             Stack(
               children: [
