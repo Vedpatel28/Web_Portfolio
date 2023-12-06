@@ -22,7 +22,7 @@ class MyTextStyle {
 
   static TextStyle iAmStyle = TextStyle(
     fontWeight: FontWeight.w600,
-    color: MyColor.digDeveloperColor.withOpacity(0.5),
+    color: MyColor.digDeveloperColor,
   );
 
   static TextStyle jobTitle = TextStyle(
