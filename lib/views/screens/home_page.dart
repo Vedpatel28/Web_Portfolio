@@ -37,11 +37,6 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: LayoutBuilder(
           builder: (context, constraints) {
-            log("_____---------________-------________");
-            log("Con : ${constraints.biggest.width}");
-            log("Wid : ${constraints.maxWidth}");
-            log("_____---------________-------________");
-
             if (constraints.biggest.width > 1300) {
               return Column(
                 children: [
