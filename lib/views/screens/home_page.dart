@@ -1,6 +1,5 @@
 // ignore_for_file: must_be_immutable
 
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:glassmorphism/glassmorphism.dart';
@@ -411,59 +410,66 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             children: [
                               SizedBox(width: s.width * 0.02),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Transform.translate(
-                                    offset: const Offset(0, 100),
-                                    child: Text(
-                                      "PROJECT 1",
-                                      style: GoogleFonts.notoSerifMakasar(
-                                        textStyle: MyTextStyle.project1,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(0, 100),
-                                    child: Text(
-                                      "Chatting Mobile App",
-                                      style: GoogleFonts.roboto(
-                                        textStyle: MyTextStyle.aboutMe,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 100),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                              GestureDetector(
+                              onTap: () {
+                                launchUrl(
+                                  Uri.parse("https://github.com/Vedpatel28/Chatting-App"),
+                                );
+                              },
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Transform.translate(
+                                      offset: const Offset(0, 100),
                                       child: Text(
-                                        "Firebase Miner (Chat App) is an innovative and secure mobile application developed using Flutter, aiming to provide users with a seamless two-way communication platform. The app utilizes the powerful features of Firebase Authentication and Firebase Firestore Database to ensure smooth user authentication and real-time data synchronization.",
-                                        style: GoogleFonts.roboto(
-                                          textStyle: MyTextStyle.aboutDetail,
-                                          fontSize: s.width * 0.014,
+                                        "PROJECT 1",
+                                        style: GoogleFonts.notoSerifMakasar(
+                                          textStyle: MyTextStyle.project1,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(0, 100),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(0, 100),
                                       child: Text(
-                                        "⇝   Read more",
+                                        "Chatting Mobile App",
                                         style: GoogleFonts.roboto(
                                           textStyle: MyTextStyle.aboutMe,
-                                          fontSize: s.width * 0.014,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 100),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "Firebase Miner (Chat App) is an innovative and secure mobile application developed using Flutter, aiming to provide users with a seamless two-way communication platform. The app utilizes the powerful features of Firebase Authentication and Firebase Firestore Database to ensure smooth user authentication and real-time data synchronization.",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutDetail,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(0, 100),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "⇝   Read more",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutMe,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               Stack(
                                 children: [
@@ -519,59 +525,66 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             children: [
                               SizedBox(width: s.width * 0.05),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Transform.translate(
-                                    offset: const Offset(750, 80),
-                                    child: Text(
-                                      "PROJECT 2",
-                                      style: GoogleFonts.notoSerifMakasar(
-                                        textStyle: MyTextStyle.project1,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(750, 80),
-                                    child: Text(
-                                      "Media Player",
-                                      style: GoogleFonts.roboto(
-                                        textStyle: MyTextStyle.aboutMe,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(750, 80),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                              GestureDetector(
+                                onTap: () {
+                                  launchUrl(
+                                    Uri.parse("https://github.com/Vedpatel28/media_player_app"),
+                                  );
+                                },
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Transform.translate(
+                                      offset: const Offset(750, 80),
                                       child: Text(
-                                        "The aim of this project is to develop a media player application using the Flutter framework that enhances the media playback experience for users. The Media Booster app will have an audio player, video player, and carousel slider functionalities along with a tab bar view. The project is designed to enhance the knowledge and skills of IT students in mobile app development using Flutter.",
-                                        style: GoogleFonts.roboto(
-                                          textStyle: MyTextStyle.aboutDetail,
-                                          fontSize: s.width * 0.014,
+                                        "PROJECT 2",
+                                        style: GoogleFonts.notoSerifMakasar(
+                                          textStyle: MyTextStyle.project1,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(750, 80),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(750, 80),
                                       child: Text(
-                                        "⇝   Read more",
+                                        "Media Player",
                                         style: GoogleFonts.roboto(
                                           textStyle: MyTextStyle.aboutMe,
-                                          fontSize: s.width * 0.014,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(750, 80),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "The aim of this project is to develop a media player application using the Flutter framework that enhances the media playback experience for users. The Media Booster app will have an audio player, video player, and carousel slider functionalities along with a tab bar view. The project is designed to enhance the knowledge and skills of IT students in mobile app development using Flutter.",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutDetail,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(750, 80),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "⇝   Read more",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutMe,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               Stack(
                                 children: [
@@ -627,59 +640,66 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             children: [
                               SizedBox(width: s.width * 0.02),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Transform.translate(
-                                    offset: const Offset(0, 100),
-                                    child: Text(
-                                      "PROJECT 3",
-                                      style: GoogleFonts.notoSerifMakasar(
-                                        textStyle: MyTextStyle.project1,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(0, 100),
-                                    child: Text(
-                                      "Weather App",
-                                      style: GoogleFonts.roboto(
-                                        textStyle: MyTextStyle.aboutMe,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 100),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                              GestureDetector(
+                                onTap: () {
+                                  launchUrl(
+                                    Uri.parse("https://github.com/Vedpatel28/weather_app"),
+                                  );
+                                },
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Transform.translate(
+                                      offset: const Offset(0, 100),
                                       child: Text(
-                                        "Weather App is a feature-rich weather application built using Flutter, incorporating key concepts such as API calling, Shared Preferences, and network connectivity. The app offers a comprehensive set of functionalities designed to provide users with accurate and timely weather information for cities, states, and countries.",
-                                        style: GoogleFonts.roboto(
-                                          textStyle: MyTextStyle.aboutDetail,
-                                          fontSize: s.width * 0.014,
+                                        "PROJECT 3",
+                                        style: GoogleFonts.notoSerifMakasar(
+                                          textStyle: MyTextStyle.project1,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(0, 100),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(0, 100),
                                       child: Text(
-                                        "⇝   Read more",
+                                        "Weather App",
                                         style: GoogleFonts.roboto(
                                           textStyle: MyTextStyle.aboutMe,
-                                          fontSize: s.width * 0.014,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 100),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "Weather App is a feature-rich weather application built using Flutter, incorporating key concepts such as API calling, Shared Preferences, and network connectivity. The app offers a comprehensive set of functionalities designed to provide users with accurate and timely weather information for cities, states, and countries.",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutDetail,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(0, 100),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "⇝   Read more",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutMe,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               Stack(
                                 children: [
@@ -1517,59 +1537,66 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             children: [
                               SizedBox(width: s.width * 0.02),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: Text(
-                                      "PROJECT 1",
-                                      style: GoogleFonts.notoSerifMakasar(
-                                        textStyle: MyTextStyle.project1,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: Text(
-                                      "Chatting Mobile App",
-                                      style: GoogleFonts.roboto(
-                                        textStyle: MyTextStyle.aboutMe,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                              GestureDetector(
+                                onTap: () {
+                                  launchUrl(
+                                    Uri.parse("https://github.com/Vedpatel28/Chatting-App"),
+                                  );
+                                },
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
                                       child: Text(
-                                        "Firebase Miner (Chat App) is an innovative and secure mobile application developed using Flutter, aiming to provide users with a seamless two-way communication platform. The app utilizes the powerful features of Firebase Authentication and Firebase Firestore Database to ensure smooth user authentication and real-time data synchronization.",
-                                        style: GoogleFonts.roboto(
-                                          textStyle: MyTextStyle.aboutDetail,
-                                          fontSize: s.width * 0.014,
+                                        "PROJECT 1",
+                                        style: GoogleFonts.notoSerifMakasar(
+                                          textStyle: MyTextStyle.project1,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
                                       child: Text(
-                                        "⇝   Read more",
+                                        "Chatting Mobile App",
                                         style: GoogleFonts.roboto(
                                           textStyle: MyTextStyle.aboutMe,
-                                          fontSize: s.width * 0.014,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "Firebase Miner (Chat App) is an innovative and secure mobile application developed using Flutter, aiming to provide users with a seamless two-way communication platform. The app utilizes the powerful features of Firebase Authentication and Firebase Firestore Database to ensure smooth user authentication and real-time data synchronization.",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutDetail,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "⇝   Read more",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutMe,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               Stack(
                                 children: [
@@ -1626,59 +1653,66 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             children: [
                               SizedBox(width: s.width * 0.02),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: Text(
-                                      "PROJECT 2",
-                                      style: GoogleFonts.notoSerifMakasar(
-                                        textStyle: MyTextStyle.project1,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: Text(
-                                      "Media Player",
-                                      style: GoogleFonts.roboto(
-                                        textStyle: MyTextStyle.aboutMe,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                              GestureDetector(
+                                onTap: () {
+                                  launchUrl(
+                                    Uri.parse("https://github.com/Vedpatel28/media_player_app"),
+                                  );
+                                },
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
                                       child: Text(
-                                        "The aim of this project is to develop a media player application using the Flutter framework that enhances the media playback experience for users. The Media Booster app will have an audio player, video player, and carousel slider functionalities along with a tab bar view. The project is designed to enhance the knowledge and skills of IT students in mobile app development using Flutter.",
-                                        style: GoogleFonts.roboto(
-                                          textStyle: MyTextStyle.aboutDetail,
-                                          fontSize: s.width * 0.014,
+                                        "PROJECT 2",
+                                        style: GoogleFonts.notoSerifMakasar(
+                                          textStyle: MyTextStyle.project1,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
                                       child: Text(
-                                        "⇝   Read more",
+                                        "Media Player",
                                         style: GoogleFonts.roboto(
                                           textStyle: MyTextStyle.aboutMe,
-                                          fontSize: s.width * 0.014,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "The aim of this project is to develop a media player application using the Flutter framework that enhances the media playback experience for users. The Media Booster app will have an audio player, video player, and carousel slider functionalities along with a tab bar view. The project is designed to enhance the knowledge and skills of IT students in mobile app development using Flutter.",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutDetail,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "⇝   Read more",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutMe,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               Stack(
                                 children: [
@@ -1735,59 +1769,66 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             children: [
                               SizedBox(width: s.width * 0.02),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: Text(
-                                      "PROJECT 3",
-                                      style: GoogleFonts.notoSerifMakasar(
-                                        textStyle: MyTextStyle.project1,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: Text(
-                                      "Weather App",
-                                      style: GoogleFonts.roboto(
-                                        textStyle: MyTextStyle.aboutMe,
-                                        fontSize: s.width * 0.02,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                              GestureDetector(
+                                onTap: () {
+                                  launchUrl(
+                                    Uri.parse("https://github.com/Vedpatel28/weather_app"),
+                                  );
+                                },
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
                                       child: Text(
-                                        "Weather App is a feature-rich weather application built using Flutter, incorporating key concepts such as API calling, Shared Preferences, and network connectivity. The app offers a comprehensive set of functionalities designed to provide users with accurate and timely weather information for cities, states, and countries.",
-                                        style: GoogleFonts.roboto(
-                                          textStyle: MyTextStyle.aboutDetail,
-                                          fontSize: s.width * 0.014,
+                                        "PROJECT 3",
+                                        style: GoogleFonts.notoSerifMakasar(
+                                          textStyle: MyTextStyle.project1,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 10),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
                                       child: Text(
-                                        "⇝   Read more",
+                                        "Weather App",
                                         style: GoogleFonts.roboto(
                                           textStyle: MyTextStyle.aboutMe,
-                                          fontSize: s.width * 0.014,
+                                          fontSize: s.width * 0.02,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "Weather App is a feature-rich weather application built using Flutter, incorporating key concepts such as API calling, Shared Preferences, and network connectivity. The app offers a comprehensive set of functionalities designed to provide users with accurate and timely weather information for cities, states, and countries.",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutDetail,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 10),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "⇝   Read more",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutMe,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               Stack(
                                 children: [
@@ -2598,59 +2639,66 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             children: [
                               SizedBox(width: s.width * 0.02),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: Text(
-                                      "PROJECT 1",
-                                      style: GoogleFonts.notoSerifMakasar(
-                                        textStyle: MyTextStyle.project1,
-                                        fontSize: s.width * 0.04,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: Text(
-                                      "Chatting Mobile App",
-                                      style: GoogleFonts.roboto(
-                                        textStyle: MyTextStyle.aboutMe,
-                                        fontSize: s.width * 0.03,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                              GestureDetector(
+                                onTap: () {
+                                  launchUrl(
+                                    Uri.parse("https://github.com/Vedpatel28/Chatting-App"),
+                                  );
+                                },
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
                                       child: Text(
-                                        "Firebase Miner (Chat App) is an innovative and secure mobile application developed using Flutter, aiming to provide users with a seamless two-way communication platform. The app utilizes the powerful features of Firebase Authentication and Firebase Firestore Database to ensure smooth user authentication and real-time data synchronization.",
-                                        style: GoogleFonts.roboto(
-                                          textStyle: MyTextStyle.aboutDetail,
-                                          fontSize: s.width * 0.018,
+                                        "PROJECT 1",
+                                        style: GoogleFonts.notoSerifMakasar(
+                                          textStyle: MyTextStyle.project1,
+                                          fontSize: s.width * 0.04,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
                                       child: Text(
-                                        "⇝   Read more",
+                                        "Chatting Mobile App",
                                         style: GoogleFonts.roboto(
                                           textStyle: MyTextStyle.aboutMe,
-                                          fontSize: s.width * 0.016,
+                                          fontSize: s.width * 0.03,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "Firebase Miner (Chat App) is an innovative and secure mobile application developed using Flutter, aiming to provide users with a seamless two-way communication platform. The app utilizes the powerful features of Firebase Authentication and Firebase Firestore Database to ensure smooth user authentication and real-time data synchronization.",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutDetail,
+                                            fontSize: s.width * 0.018,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "⇝   Read more",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutMe,
+                                            fontSize: s.width * 0.016,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               Stack(
                                 children: [
@@ -2707,59 +2755,66 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             children: [
                               SizedBox(width: s.width * 0.02),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: Text(
-                                      "PROJECT 2",
-                                      style: GoogleFonts.notoSerifMakasar(
-                                        textStyle: MyTextStyle.project1,
-                                        fontSize: s.width * 0.04,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: Text(
-                                      "Media Player",
-                                      style: GoogleFonts.roboto(
-                                        textStyle: MyTextStyle.aboutMe,
-                                        fontSize: s.width * 0.03,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                              GestureDetector(
+                                onTap: () {
+                                  launchUrl(
+                                    Uri.parse("https://github.com/Vedpatel28/media_player_app"),
+                                  );
+                                },
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
                                       child: Text(
-                                        "The aim of this project is to develop a media player application using the Flutter framework that enhances the media playback experience for users. The Media Booster app will have an audio player, video player, and carousel slider functionalities along with a tab bar view. The project is designed to enhance the knowledge and skills of IT students in mobile app development using Flutter.",
-                                        style: GoogleFonts.roboto(
-                                          textStyle: MyTextStyle.aboutDetail,
-                                          fontSize: s.width * 0.018,
+                                        "PROJECT 2",
+                                        style: GoogleFonts.notoSerifMakasar(
+                                          textStyle: MyTextStyle.project1,
+                                          fontSize: s.width * 0.04,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
                                       child: Text(
-                                        "⇝   Read more",
+                                        "Media Player",
                                         style: GoogleFonts.roboto(
                                           textStyle: MyTextStyle.aboutMe,
-                                          fontSize: s.width * 0.014,
+                                          fontSize: s.width * 0.03,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "The aim of this project is to develop a media player application using the Flutter framework that enhances the media playback experience for users. The Media Booster app will have an audio player, video player, and carousel slider functionalities along with a tab bar view. The project is designed to enhance the knowledge and skills of IT students in mobile app development using Flutter.",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutDetail,
+                                            fontSize: s.width * 0.018,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "⇝   Read more",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutMe,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               Stack(
                                 children: [
@@ -2816,59 +2871,66 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             children: [
                               SizedBox(width: s.width * 0.02),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: Text(
-                                      "PROJECT 3",
-                                      style: GoogleFonts.notoSerifMakasar(
-                                        textStyle: MyTextStyle.project1,
-                                        fontSize: s.width * 0.04,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.03),
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: Text(
-                                      "Weather App",
-                                      style: GoogleFonts.roboto(
-                                        textStyle: MyTextStyle.aboutMe,
-                                        fontSize: s.width * 0.03,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                              GestureDetector(
+                                onTap: () {
+                                  launchUrl(
+                                    Uri.parse("https://github.com/Vedpatel28/weather_app"),
+                                  );
+                                },
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
                                       child: Text(
-                                        "Weather App is a feature-rich weather application built using Flutter, incorporating key concepts such as API calling, Shared Preferences, and network connectivity. The app offers a comprehensive set of functionalities designed to provide users with accurate and timely weather information for cities, states, and countries.",
-                                        style: GoogleFonts.roboto(
-                                          textStyle: MyTextStyle.aboutDetail,
-                                          fontSize: s.width * 0.018,
+                                        "PROJECT 3",
+                                        style: GoogleFonts.notoSerifMakasar(
+                                          textStyle: MyTextStyle.project1,
+                                          fontSize: s.width * 0.04,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  SizedBox(height: s.height * 0.01),
-                                  Transform.translate(
-                                    offset: const Offset(0, 70),
-                                    child: SizedBox(
-                                      width: s.width * 0.4,
+                                    SizedBox(height: s.height * 0.03),
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
                                       child: Text(
-                                        "⇝   Read more",
+                                        "Weather App",
                                         style: GoogleFonts.roboto(
                                           textStyle: MyTextStyle.aboutMe,
-                                          fontSize: s.width * 0.014,
+                                          fontSize: s.width * 0.03,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "Weather App is a feature-rich weather application built using Flutter, incorporating key concepts such as API calling, Shared Preferences, and network connectivity. The app offers a comprehensive set of functionalities designed to provide users with accurate and timely weather information for cities, states, and countries.",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutDetail,
+                                            fontSize: s.width * 0.018,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: s.height * 0.01),
+                                    Transform.translate(
+                                      offset: const Offset(0, 70),
+                                      child: SizedBox(
+                                        width: s.width * 0.4,
+                                        child: Text(
+                                          "⇝   Read more",
+                                          style: GoogleFonts.roboto(
+                                            textStyle: MyTextStyle.aboutMe,
+                                            fontSize: s.width * 0.014,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               Stack(
                                 children: [
